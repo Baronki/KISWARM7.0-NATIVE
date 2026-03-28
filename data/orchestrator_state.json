@@ -1,0 +1,191 @@
+{
+  "orchestrator": {
+    "status": "operational",
+    "cycle_count": 980,
+    "timestamp": "2026-03-28T22:15:54.109754"
+  },
+  "services": {
+    "hexstrike": {
+      "name": "hexstrike",
+      "port": 5000,
+      "status": "healthy",
+      "timestamp": "2026-03-28T22:15:34.013145",
+      "port_status": "open",
+      "http_code": 200
+    },
+    "qwen_gateway": {
+      "name": "qwen_gateway",
+      "port": 5001,
+      "status": "healthy",
+      "timestamp": "2026-03-28T22:15:34.025995",
+      "port_status": "open",
+      "http_code": 200
+    },
+    "ki_scanner": {
+      "name": "ki_scanner",
+      "port": 5002,
+      "status": "degraded",
+      "timestamp": "2026-03-28T22:15:34.040094",
+      "port_status": "open",
+      "http_code": 404
+    },
+    "execute_api": {
+      "name": "execute_api",
+      "port": 5556,
+      "status": "healthy",
+      "timestamp": "2026-03-28T22:15:34.052845",
+      "port_status": "open",
+      "http_code": 200
+    },
+    "ollama": {
+      "name": "ollama",
+      "port": 11434,
+      "status": "healthy",
+      "timestamp": "2026-03-28T22:15:34.064359",
+      "port_status": "open",
+      "http_code": 200
+    },
+    "tor": {
+      "name": "tor",
+      "port": 9050,
+      "status": "running",
+      "timestamp": "2026-03-28T22:15:34.075751",
+      "port_status": "open"
+    }
+  },
+  "mesh": {
+    "upcloud_kiswarm": {
+      "name": "upcloud_kiswarm",
+      "role": "MASTER",
+      "status": "online",
+      "channels": {
+        "tailscale": "online",
+        "tor": "offline"
+      },
+      "timestamp": "2026-03-28T22:15:34.085424"
+    },
+    "openclaw": {
+      "name": "openclaw",
+      "role": "BACKUP",
+      "status": "offline",
+      "channels": {
+        "tailscale": "offline",
+        "tor": "offline"
+      },
+      "timestamp": "2026-03-28T22:15:34.088066"
+    },
+    "glm": {
+      "name": "glm",
+      "role": "CLIENT",
+      "status": "offline",
+      "channels": {
+        "tailscale": "offline",
+        "tor": "offline"
+      },
+      "timestamp": "2026-03-28T22:15:44.098972"
+    }
+  },
+  "alerts": [
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:03:43.307522"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:03:53.318789"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:05:03.395058"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:05:13.396529"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:06:23.478136"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:06:33.488943"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:07:43.561520"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:07:53.572518"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:09:03.644181"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:09:13.655487"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:10:23.737385"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:10:33.748013"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:11:43.825368"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:11:53.836693"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:13:03.915945"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:13:13.927542"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:14:24.001964"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:14:34.012170"
+    },
+    {
+      "level": "WARNING",
+      "message": "Mesh node openclaw is offline",
+      "timestamp": "2026-03-28T22:15:44.098844"
+    },
+    {
+      "level": "WARNING",
+      "message": "Tor connection not working",
+      "timestamp": "2026-03-28T22:15:54.109493"
+    }
+  ],
+  "tor_verified": false
+}

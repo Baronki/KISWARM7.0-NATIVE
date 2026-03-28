@@ -1,0 +1,11 @@
+{
+  "scan_time": "2026-03-28T14:34:26.315767",
+  "stats": {
+    "hosts_scanned": 0,
+    "ports_scanned": 0,
+    "services_found": 0,
+    "ki_services_found": 0
+  },
+  "stealth_mode": true,
+  "discovered_services": {}
+}
