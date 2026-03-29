@@ -1,0 +1,20 @@
+[Unit]
+Description=Hermes KISWARM Central Command v3.0
+After=network.target ollama.service
+Wants=ollama.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/hermes
+ExecStart=/usr/bin/python3 /opt/hermes/hermes_central.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+LimitNOFILE=65536
+MemoryMax=4G
+
+[Install]
+WantedBy=multi-user.target
